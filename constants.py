@@ -1,14 +1,29 @@
-NUM_PLAYERS = 3
+
+# ============ Editable Constants ============
+NUM_PLAYERS = 4
 SMALL_BLIND = 1
 BIG_BLIND = 2
 
 STARTING_CHIPS = 40
-
-PLAYER_TYPES = ["AI", "HUMAN", "AUTO", "RANDOM"]
-
 TIME_BETWEEN_ACTIONS = 1
+HIDDEN = False
+
+DEFAULT_PLAYER_TYPES = ["RANDOM", "RANDOM", "RANDOM", "HUMAN"]
+
+# ========== System Level Constants ==========
+AI = "AI"
+HUMAN = "HUMAN"
+AUTO = "AUTO"
+RANDOM = "RANDOM"
+PLAYER_TYPES = [AI, HUMAN, AUTO, RANDOM]
 
 SUITS = ["♥", "♦", "♣", "♠"]
 VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-ACTIONS = ["FOLD", "RAISE", "CALL", "CHECK"]
+FOLD = "FOLD"
+RAISE = "RAISE"
+CALL = "CALL"
+CHECK = "CHECK"
+ALLIN = "ALLIN"
+ACTIONS = [FOLD, RAISE, CALL, CHECK, ALLIN]
+
