@@ -68,5 +68,37 @@ class Card():
     def __init__(self, value, suit):
         self.value = value
         self.suit = suit
+        self.int = self.get_int()
+
     def __str__(self):
         return self.value + self.suit
+    
+    def __repr__(self):
+        return self.value + self.suit
+    
+    def make_low_ace(self):
+        self.int = 1
+    
+    def compare_rank(card):
+        return card.int
+    
+    def compare_suit(card):
+        if card.suit == "♠":
+            return 0
+        elif card.suit == "♥":
+            return 1
+        elif card.suit == "♦":
+            return 2
+        return 3
+    
+    def get_int(self):
+        if self.value == "A":
+            return 14
+        elif self.value == "J":
+            return 11
+        elif self.value == "Q":
+            return 12
+        elif self.value == "K":
+            return 13
+        else:
+            return int(self.value)
